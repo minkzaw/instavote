@@ -6,7 +6,7 @@ metadata:
     tier: frontend
   name: vote
 spec:
-  replicas: 4
+  replicas: 1
   selector:
     matchLabels:
       app: vote
@@ -18,5 +18,5 @@ spec:
         tier: frontend
     spec:
       containers:
-      - image: quay.io/mkzaw/vote:fault-image
+      - image: quay.io/mkzaw/vote:v1
         name: vote
