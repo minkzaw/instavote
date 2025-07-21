@@ -3,12 +3,14 @@ kind: Deployment
 metadata:
   labels:
     app: vote
+    tier: frontend
   name: vote
 spec:
   replicas: 2
   selector:
     matchLabels:
       app: vote
+      tier: frontend
   template:
     metadata:
       labels:
