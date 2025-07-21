@@ -18,5 +18,5 @@ spec:
         tier: frontend
     spec:
       containers:
-      - image: quay.io/mkzaw/vote:v1
+      - image: quay.io/mkzaw/vote:fault-image
         name: vote
