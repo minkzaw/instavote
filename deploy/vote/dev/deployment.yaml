@@ -10,5 +10,5 @@ spec:
   template:
     spec:
       containers:
-      - image: quay.io/mkzaw/vote:v4
+      - image: quay.io/mkzaw/vote:v3
         name: vote
