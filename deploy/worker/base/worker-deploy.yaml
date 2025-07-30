@@ -13,4 +13,4 @@ spec:
     spec:
       containers:
       - name: worker
-        image: docker.io/nginx:alpine
+        image: quay.io/mkzaw/worker:v1
