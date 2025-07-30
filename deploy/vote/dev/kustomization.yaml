@@ -4,3 +4,14 @@ resources:
 - ../base
 patches:
 - path: deployment.yaml
+- patch: |-
+    - op: replace
+      path: /spec/ports/0
+      value:
+        name: 8080-80
+        port: 8080
+        protocol: TCP
+        targetPort: 80
+  target:
+    kind: Service
+    name: vote
