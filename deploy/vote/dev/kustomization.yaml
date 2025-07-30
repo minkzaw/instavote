@@ -3,6 +3,7 @@ kind: Kustomization
 resources:
 - ../base
 patches:
+- path: deployment.yaml
 - patch: |-
     - op: replace
       path: /spec/ports/0
@@ -23,3 +24,7 @@ commonLabels:
   project: instavote
 commonAnnotations:
   supported-by: sre@example.com
+configMapGenerator:
+- envs:
+  - options.env
+  name: vote-options
