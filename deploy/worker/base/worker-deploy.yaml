@@ -13,4 +13,4 @@ spec:
     spec:
       containers:
       - name: worker
-        image: schoolofdevops/worker:latest
+        image: docker.io/nginx:alpine
