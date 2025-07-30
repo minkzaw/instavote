@@ -3,7 +3,6 @@ kind: Kustomization
 resources:
 - ../base
 patches:
-- path: deployment.yaml
 - patch: |-
     - op: replace
       path: /spec/ports/0
@@ -15,3 +14,7 @@ patches:
   target:
     kind: Service
     name: vote
+images:
+- name: quay.io/mkzaw/vote
+  newTag: v4
+namespace: instavote
