@@ -18,3 +18,8 @@ images:
 - name: quay.io/mkzaw/vote
   newTag: v4
 namespace: instavote
+commonLabels:
+  env: dev
+  project: instavote
+commonAnnotations:
+  supported-by: sre@example.com
