@@ -15,5 +15,5 @@ spec:
         app: redis
     spec:
       containers:
-      - image: redis:alpine
+      - image: redis:latest
         name: redis
