@@ -17,7 +17,7 @@ patches:
     name: vote
 images:
 - name: quay.io/mkzaw/vote
-  newTag: main-b285fd12-1758537856 # {"$imagepolicy": "flux-system:vote:tag"}
+  newTag: main-3f03cd53-1758801755 # {"$imagepolicy": "flux-system:vote:tag"}
 namespace: instavote
 commonLabels:
   env: dev
